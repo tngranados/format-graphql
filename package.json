@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "format-graphql",
   "title": "Format GraphQL",
-  "description": "Formats a GraphQL file",
+  "description": "Formats a GraphQL document",
   "icon": "command-icon.png",
   "author": "tngranados",
   "license": "MIT",
@@ -10,7 +10,7 @@
     {
       "name": "index",
       "title": "Format GraphQL",
-      "description": "Formats a GraphQL",
+      "description": "Formats a GraphQL document",
       "mode": "view"
     }
   ],
