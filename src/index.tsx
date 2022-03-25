@@ -1,14 +1,9 @@
 import { Icon, Form, ActionPanel, Action, showToast, Clipboard, Toast, showHUD, popToRoot } from "@raycast/api";
-// import gqlPrettier from 'graphql-prettier';
 import prettier from "prettier";
 
 interface CommandForm {
-  textfield: string;
-  textarea: string;
-  datepicker: Date;
-  checkbox: boolean;
-  dropdown: string;
-  tokeneditor: string[];
+  input: string;
+  indent: string;
 }
 
 export default function Command() {
@@ -47,7 +42,7 @@ export default function Command() {
         </ActionPanel>
       }
     >
-      <Form.TextArea id="input" title="Input" placeholder="Paste GraphQL here…"/>
+      <Form.TextArea id="input" title="Input" placeholder="Paste GraphQL here…" />
       <Form.Dropdown id="indent" title="Indentation" storeValue>
         <Form.Dropdown.Item value="tab" title="Tabs" />
         <Form.Dropdown.Item value="2" title="Spaces: 2" />
