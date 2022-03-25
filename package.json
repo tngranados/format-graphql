@@ -3,6 +3,10 @@
   "name": "format-graphql",
   "title": "Format GraphQL",
   "description": "Formats a GraphQL document",
+  "categories": [
+    "Developer Tools",
+    "Productivity"
+  ],
   "icon": "command-icon.png",
   "author": "tngranados",
   "license": "MIT",
