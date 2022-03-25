@@ -38,7 +38,7 @@ export default function Command() {
     <Form
       actions={
         <ActionPanel>
-          <Action.SubmitForm icon={Icon.Checkmark} title="Format" onSubmit={handleSubmit} />
+          <Action.SubmitForm icon={Icon.Checkmark} title="Format and Copy" onSubmit={handleSubmit} />
         </ActionPanel>
       }
     >
