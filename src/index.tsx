@@ -13,13 +13,13 @@ export default function Command() {
     if (input.length === 0) {
       showToast({
         style: Toast.Style.Failure,
-        title: 'Empty input',
+        title: "Empty input",
       });
-      return
+      return;
     }
 
-    const useTabs = indent === 'tab';
-    const tabWidth = indent !== 'tab' ? parseInt(indent) : 2;
+    const useTabs = indent === "tab";
+    const tabWidth = indent !== "tab" ? parseInt(indent) : 2;
 
     const options = {
       parser: "graphql",
@@ -30,7 +30,7 @@ export default function Command() {
     const output = prettier.format(input, options);
 
     Clipboard.copy(output);
-    showHUD('Copied to clipboard');
+    showHUD("Copied to clipboard");
     popToRoot();
   }
 
